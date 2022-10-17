@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TMDB Api Tests" verbose="1">
+
+	<listeners>
+		<listener class-name="com.tmdb.reports.TestListeners"></listener>
+	</listeners>
+
+	<test name="TMDB Test" >
+		<classes>
+			<class name="com.tmdb.tests.ListTest">
+				<methods>	
+					<include name="createMovieList"/>
+					<include name="updateMovieList"/>
+					<include name="addItemsToList"/>
+					<include name="UpdateItemsToList"/>
+					<include name="removeItemsFromList"/>	
+					<include name="clearTheList"/>					
+					<include name="deleteMovieList"/>		
+					<include name="deleteAlreadyMovieList"/>					
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
+  
